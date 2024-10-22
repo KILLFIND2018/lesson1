@@ -1,0 +1,19 @@
+class Human:
+    def __init__(self, name, age):
+        #объект и это как пространство имен
+  self.name = name
+        self.age = age
+    #метод который показывает наши х-ки объектов
+  def say_info(self):
+        print(f'hi my name {self.name} to {self.age}')
+    def birthday(self):
+        self.age += 1
+  print(f'Birthday, {self.age}')
+
+den = Human('den', 22)
+#внеклассовый атрибут, но если есть другой объект с имными хар-ми, их не будет
+den.surname = 'test'
+print(den.name, den.age, den.surname)
+
+den.say_info()
+den.birthday()
