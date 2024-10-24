@@ -2,6 +2,8 @@ from fsspec.utils import other_paths
 
 
 class Human:
+    head = True
+
     def __init__(self, name, age):
         #объект и это как пространство имен
         self.name = name
@@ -29,7 +31,6 @@ class Human:
 
 den = Human('den', 22)
 max = Human('max',23)
-print(den < max)
-print(den>max)
-print(den == max)
-print(den)
+
+
+print(Human.head)
